@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Design</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Hair Design</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#about_us">Über uns
+          <a class="nav-link" href="#oefnungszeiten">Öffnungszeiten</a>
+          <a class="nav-link" href="#preise">Preise</a>
+          <a class="nav-link" href="#anfahrt">Anfahrt</a>
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!--Cookies button-->
+  <div id="cookies" class="mx-auto" style="width: 100%; position: fixed; bottom: 10px; z-index: 1; ">
+    <div class="row text-center">
+      <div class="col-lg-6 mx-auto py-1" style="background-color: gray;">
+        Auf dieser Website werden Cookies gesammelt. <a href="https://html-online.com/privacy-terms-and-conditions/"
+          style="color:black;">[hier nachlesen]</a>
+        <button id="cookies_accept" class="border border-dark"
+          style=" background-color: rgba(128, 128, 128, 0);">accept</button>
+      </div>
+    </div>
+  </div>
+  <!--Bilder show-->
+  <div id="home" class="row mx-auto" style="width: 90%;">
+    <div class="col" id="container_col_carousel">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="pictures/friseur.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pictures/salon_zwischenbild.JPG" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pictures/salon_zwischenbild.JPG" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pictures/Theke.JPG" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pictures/friseur2.JPG" alt="Fifth slide">
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- <button id="btn_carousel" type="button" class="btn btn-outline-secondary">Secondary</button>-->
+      <div>
+        <a href="#kontakt">
+          <button class="btn_carousel d-block">Termin</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--About us-->
+  <div id="about_us" class="mx-auto colored_gray" style=" width: 90%; margin-top: 50px;">
+    <div class="row mx-auto " style="width: 40vw; min-width: 300px; max-width: 500px;">
+      <img src="pictures/logo_geschnitten.png" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <div class="row mx-auto " style="width: fit-content;">
+      <h3>Sanije Dinaj</h3>
+    </div>
+    <div id="div_Sani" class="row mx-auto " >
+      <img src="pictures/Sani_Rund.png" alt="" class="img-fluid rounded" style="width: 100%;">
+    </div>
+    <div class="row">
+      <div class="col">
+        <hr class="featurette-divider m-5">
+      </div>
+    </div>
+    <div class="row mx-auto">
+      <div class="col-lg-6 text-center ">
+        <p>
+          Aufgrund meiner langjährigen Erfahrungen, der Faszination für Haar und Stylings, werden Sie bei ihrem Besuch
+          ausschließlich von mir betreut.
+          Beginnend mit einer kompetenten Beratung und Verständnis für Ihre Wünsche, möchte ich Ihnen meine
+          Wertschätzung entgegenbringen.
+          <br>
+          <br>
+          <br>
+          Zurücklehnen, Entspannen, Wohlfühlen.
+          <br>
+          <br>
+          Sie sind bei mir in guten Händen.
+        </p>
+      </div>
+      <div class="col-lg-4 mx-auto text-center">
+
+        <img src="pictures/Meisterbrief.jpg" alt="" class="img-fluid rounded border border-dark"
+          style=" width: 100%; max-width: 400px;">
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--Space-->
+  <div class="row mx-auto" style="width: 90%;">
+    <div class="col">
+      <hr class="featurette-divider m-5">
+    </div>
+  </div>
+
+  <!--Öffnungszeiten-->
+  <div id="oefnungszeiten" class="mx-auto colored_gray" style="width: 90%;">
+    <div class="row mx-auto" style="width: fit-content;">
+      <h1>Öffnungszeiten</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 mx-auto">
+        <hr class="featurette-divider m-3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 mx-auto">
+
+        <table class="table " style="border: 2px solid black;">
+
+          <tbody>
+            <tr>
+              <td>Montag</td>
+              <td>9 - 18Uhr</td>
+            </tr>
+            <tr>
+              <td>Dienstag</td>
+              <td>9 - 18Uhr</td>
+            </tr>
+            <tr>
+              <td>Mittwoch</td>
+              <td>9 - 18Uhr</td>
+            </tr>
+            <tr>
+              <td>Donnersatg</td>
+              <td>9 - 18Uhr</td>
+            </tr>
+            <tr>
+              <td>Freitag</td>
+              <td>9 - 20Uhr</td>
+            </tr>
+            <tr>
+              <td>Samstag</td>
+              <td>8 - 13Uhr</td>
+            </tr>
+            <tr>
+              <td>Sonntag</td>
+              <td>geschlossen</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--Space-->
+  <div class="row mx-auto" style="width: 90%;">
+    <div class="col">
+      <hr class="featurette-divider m-5">
+    </div>
+  </div>
+
+  <!--Preise-->
+  <div id="preise" class="mx-auto colored_gray" style="width: 90%;">
+    <div class="row mx-auto" style="width: fit-content;">
+      <h1>Preise</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 mx-auto">
+        <hr class="featurette-divider m-3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="text-center">
+          <h3>Männer</h3>
+        </div>
+        <table class="table table-striped">
+
+          <tbody>
+            <tr>
+              <td>Herrenhaarschnitt</td>
+              <td>18,00€</td>
+            </tr>
+            <tr>
+              <td>Waschen, schneiden & föhnen</td>
+              <td>22,00€</td>
+            </tr>
+            <tr>
+              <td>Haarwasser + Massage</td>
+              <td>25,00€</td>
+            </tr>
+            <tr>
+              <td>Seniorenhaarschnitt</td>
+              <td>15,00€</td>
+            </tr>
+            <tr>
+              <td>Masschinenschnitt</td>
+              <td>13,00€</td>
+            </tr>
+            <tr>
+              <td>Bartpflege</td>
+              <td>7,00€</td>
+            </tr>
+            <tr>
+              <td>Bart & Rasur</td>
+              <td>10,00€</td>
+            </tr>
+            <tr>
+              <td>Strähnenab</td>
+              <td>15,00€</td>
+            </tr>
+            <tr>
+              <td>Färbenab</td>
+              <td>20,00€</td>
+            </tr>
+            <tr>
+              <td>Gesichtsbehandlung / wachsen</td>
+              <td>10,00€</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <h3>Kinder</h3>
+        </div>
+        <table class="table table-striped">
+
+          <tbody>
+            <tr>
+              <td>Haarschnitt</td>
+              <td>16,00€</td>
+            </tr>
+            <tr>
+              <td>Waschen, schneiden & föhnen</td>
+              <td>20,00€</td>
+            </tr>
+            <tr>
+              <td>Mädchen</td>
+              <td>25,00€</td>
+            </tr>
+            <tr>
+              <td>Kinder bis zu 7 Jahren</td>
+              <td>12,00€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-6 mx-auto">
+        <div class="text-center">
+          <h3>Frauen</h3>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Kurzhaar</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Waschen, schneiden & föhnen</td>
+              <td>34,00€</td>
+            </tr>
+            <tr>
+              <td>Waschen & legen</td>
+              <td>25,00€</td>
+            </tr>
+            <tr>
+              <td>Färben/tönen (Ansatz)</td>
+              <td>ab 35,00€</td>
+            </tr>
+            <tr>
+              <td>Blondierung</td>
+              <td>ab 35,00€</td>
+            </tr>
+            <tr>
+              <td>Creative-Technik (Strähnen)</td>
+              <td>ab 45,00€</td>
+            </tr>
+            <tr>
+              <td>Dauerwelle</td>
+              <td>40,00€</td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Langhaar</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Waschen, schneiden & föhnen</td>
+              <td>40,00€</td>
+            </tr>
+            <tr>
+              <td>Creative-Technik (Strähnen)</td>
+              <td>ab 65,00€</td>
+            </tr>
+            <tr>
+              <td>Blondierung</td>
+              <td>ab 40,00€</td>
+            </tr>
+            <tr>
+              <td>Augenbrauen + Wimpern färben</td>
+              <td>15,00€</td>
+            </tr>
+            <tr>
+              <td>Augenbrauen zupfen</td>
+              <td>8,00€</td>
+            </tr>
+            <tr>
+              <td>Gesichtsbehandlung / wachsen</td>
+              <td>10,00€</td>
+            </tr>
+            <tr>
+              <td>Braut inkl. Kosmetik und Frisur</td>
+              <td>150,00€</td>
+            </tr>
+            <tr>
+              <td>Dauerwelle</td>
+              <td>ab 50,00€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!--Space-->
+  <div class="row mx-auto" style="width: 90%;">
+    <div class="col">
+      <hr class="featurette-divider m-5">
+    </div>
+  </div>
+
+  <!--Anfahrt-->
+  <div id="anfahrt" class="mx-auto colored_gray" style="width: 90%;">
+    <div class="row mx-auto" style="width: fit-content;">
+      <h1>Anfahrt</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 mx-auto">
+        <hr class="featurette-divider m-3">
+      </div>
+    </div>
+    <div class="row" style="height: fit-content;">
+      <div class="col-lg-10 mx-auto">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d165.5125500696966!2d9.920906622735266!3d48.41428915697648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799655e5e4c27bf%3A0x64b57a60461dbae9!2sFriseurhairdesign!5e0!3m2!1sde!2sde!4v1606045719502!5m2!1sde!2sde"
+          width="100%" height="300vw" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+        </div>
+    </div>
+
+  </div>
+
+  <!--Space-->
+  <div class="row mx-auto" style="width: 90%;">
+    <div class="col">
+      <hr class="featurette-divider m-5">
+    </div>
+  </div>
+
+  <!--Kontakt-->
+  <div id="kontakt" class="mx-auto colored_gray" style="width: 90%;">
+    <div class="row mx-auto" style="width: fit-content;">
+      <h1>Kontakt</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 mx-auto">
+        <hr class="featurette-divider m-3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mx-auto">
+
+        <table class="table border">
+
+          <tbody>
+            <tr>
+              <td>Telefon</td>
+              <td>
+                <a href="tel:+4973047060102">07304 / 7060102</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>friseurhairdesign@hotmail.com</td>
+            </tr>
+            <tr>
+              <td>Anschrift</td>
+              <td>Hummel-Straße 9 <br> 89134 Blaustein</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+  <!--Space-->
+  <div class="row mx-auto" style="width: 90%;">
+    <div class="col">
+      <hr class="featurette-divider m-5">
+    </div>
+  </div>
+</body>
+<footer class="mx-auto" style="width: 90%;">
+  <a href="impressum.html">Impressum</a>
+</footer>
+<!--Space-->
+<div class="row mx-auto" style="width: 90%;">
+  <div class="col m-2">
+    <hr class="featurette-divider m-2">
+  </div>
+</div>
+
+</html>

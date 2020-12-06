@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Hair Design\\HairDesign\\pages\\impressum"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Hair Design mit Framework"
+	}
+}

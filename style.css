@@ -1,0 +1,58 @@
+p, a, h1, h2, h3, td{
+
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+    font-size: 18px;
+}
+h1{
+    font-size: 45px;
+    margin-top: 10px;
+}
+a{
+  color: black;
+}
+
+
+.container_col_carousel {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .container_col_carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .btn_carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(85, 85, 85, 0.700);
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .colored_gray{
+    background-color:rgba(138, 136, 136, 0.685) ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    #div_Sani {
+      max-width: 200px;
+      height: auto;
+      width: auto;
+    }
+  }
